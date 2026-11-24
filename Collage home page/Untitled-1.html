@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>College Home Page</title>
+
+<style>
+/* Box Model */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Header */
+header {
+  background: navy;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Navigation using Flexbox */
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: lightblue;
+  padding: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Main Section */
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  flex: 1;
+  background: lightgray;
+  padding: 20px;
+  margin: 10px;
+  border: 2px solid black;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Form */
+form {
+  padding: 20px;
+  background: lightyellow;
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+}
+
+/* Footer */
+footer {
+  background: navy;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Media Query */
+@media (max-width: 600px) {
+  nav, .container {
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Semantic Header -->
+<header>
+  <h1>ABC Engineering College</h1>
+  <p>Welcome to Our College</p>
+</header>
+
+<!-- Semantic Navigation -->
+<nav>
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Courses</a>
+  <a href="#">Contact</a>
+</nav>
+
+<!-- Semantic Main Section -->
+<main>
+
+<section class="container">
+
+  <article class="box">
+    <h2>About Us</h2>
+    <p>Our college provides quality education.</p>
+  </article>
+
+  <article class="box">
+    <h2>Courses</h2>
+    <p>CSE, ECE, EEE, AI&DS</p>
+  </article>
+
+</section>
+
+<!-- Table -->
+<section class="box">
+  <h2>Student Details</h2>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Marks</th>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>David</td>
+      <td>85</td>
+    </tr>
+  </table>
+</section>
+
+<!-- Form -->
+<section class="box">
+  <h2>Registration Form</h2>
+
+  <form>
+    Name:
+    <input type="text" placeholder="Enter Name"><br>
+
+    Email:
+    <input type="email" placeholder="Enter Email"><br>
+
+    Course:
+    <select>
+      <option>CSE</option>
+      <option>ECE</option>
+      <option>AI&DS</option>
+    </select><br>
+
+    <button type="submit">Register</button>
+  </form>
+</section>
+
+</main>
+
+<!-- Semantic Footer -->
+<footer>
+  <p>© 2026 Abc Engineering College</p>
+</footer>
+
+</body>
+</html>
